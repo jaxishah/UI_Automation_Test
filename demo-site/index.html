@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <h1>Welcome to Demo App</h1>
+  </header>
+  <h1 id="welcome">Welcome!</h1>
+  <p id="label-hello">Hello!</p>
+
+  <!-- Language selector for demo -->
+  <select id="language-select">
+    <option value="en">English</option>
+    <option value="ko">Korean</option>
+    <option value="ja">Japanese</option>
+    <option value="id">Indonesian</option>
+  </select>
+
+  <button id="logout-btn">Logout</button>
+
+  <script>
+    // Language switching
+    const label = document.getElementById('label-hello');
+    const langSelect = document.getElementById('language-select');
+    langSelect.addEventListener('change', () => {
+      const lang = langSelect.value;
+      const greetings = { en: 'Hello', ko: '안녕하세요', ja: 'こんにちは', id: 'Halo' };
+      label.textContent = greetings[lang] || 'Hello!';
+    });
+
+    // Logout
+    document.getElementById('logout-btn').addEventListener('click', () => {
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>

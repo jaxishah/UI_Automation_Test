@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+</head>
+<body>
+  <h1>Login Page</h1>
+  <form id="login-form">
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button type="submit">Login</button>
+  </form>
+  <p class="error" style="display:none;color:red;">Invalid email or password</p>
+   <button id="alert-btn" type="button">Show Alert</button>  
+
+  <script>
+    const form = document.getElementById('login-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const pass = document.getElementById('password').value;
+      if (email === 'demo@example.com' && pass === 'Password123') {
+        window.location.href = 'index.html';
+      } else {
+        document.querySelector('.error').style.display = 'block';
+      }
+    });
+
+    document.getElementById('alert-btn').addEventListener('click', () => {
+      alert('This is a test alert!');
+    });
+  </script>
+</body>
+</html>

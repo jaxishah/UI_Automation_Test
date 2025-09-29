@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload</title>
+</head>
+<body>
+  <h1>File Upload Demo</h1>
+  <form id="upload-form">
+    <input type="file" id="file-input"><br>
+    <button type="submit">Upload</button>
+  </form>
+  <p class="success" style="display:none;color:green;">File uploaded!</p>
+  <p class="error" style="display:none;color:red;">Please select a file</p>
+
+  <script>
+    document.getElementById('upload-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const file = document.getElementById('file-input').files[0];
+      if(file){
+        document.querySelector('.success').style.display = 'block';
+        document.querySelector('.error').style.display = 'none';
+      } else {
+        document.querySelector('.error').style.display = 'block';
+        document.querySelector('.success').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

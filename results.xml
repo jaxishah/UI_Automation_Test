@@ -1,0 +1,63 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="8.905183000000001">
+<testsuite name="login.spec.js" timestamp="2025-09-29T07:19:58.157Z" hostname="chromium" tests="3" failures="1" skipped="0" time="9.805" errors="0">
+<testcase name="Login flow › valid login succeeds" classname="login.spec.js" time="7.182">
+<failure message="login.spec.js:9:7 valid login succeeds" type="FAILURE">
+<![CDATA[  [chromium] › login.spec.js:9:7 › Login flow › valid login succeeds ───────────────────────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected string: "http://localhost:3000/index.html"
+    Received string: "http://localhost:3000/login.html"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/login.html"
+
+
+      11 |     await page.fill('#password', users.validUser.password);
+      12 |     await page.click('button[type=submit]');
+    > 13 |     await expect(page).toHaveURL('http://localhost:3000/index.html');
+         |                        ^
+      14 |     await expect(page.locator('#label-hello')).toHaveText('Hello!');
+      15 |   });
+      16 |
+        at E:\Jaxi\UI_Automation_Test\tests\login.spec.js:13:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\login-Login-flow-valid-login-succeeds-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\login-Login-flow-valid-login-succeeds-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\login-Login-flow-valid-login-succeeds-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\login-Login-flow-valid-login-succeeds-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\login-Login-flow-valid-login-succeeds-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\login-Login-flow-valid-login-succeeds-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\login-Login-flow-valid-login-succeeds-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\login-Login-flow-valid-login-succeeds-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\login-Login-flow-valid-login-succeeds-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login flow › invalid login shows error" classname="login.spec.js" time="1.252">
+</testcase>
+<testcase name="Login flow › logout works" classname="login.spec.js" time="1.371">
+</testcase>
+</testsuite>
+</testsuites>

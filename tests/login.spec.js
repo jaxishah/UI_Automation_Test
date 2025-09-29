@@ -1,25 +1,33 @@
-// @ts-check
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
+import users from './test-data/users.json';
 
-test('user can log in and log out', async ({ page }) => {
-  // 1. Go to the login page
-  await page.goto('https://the-internet.herokuapp.com/login');
+test.describe('Login flow', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('http://localhost:3000/login.html');
+  });
 
-  // 2. Fill in username and password
-  await page.fill('#username', 'tomsmith');
-  await page.fill('#password', 'SuperSecretPassword!');
+  test('valid login succeeds', async ({ page }) => {
+    await page.fill('#email', 'aa@ss.ggg');
+    await page.fill('#password', users.validUser.password);
+    await page.click('button[type=submit]');
+    await expect(page).toHaveURL('http://localhost:3000/index.html');
+    await expect(page.locator('#label-hello')).toHaveText('Hello!');
+  });
 
-  // 3. Click the login button
-  await page.click('button[type="submit"]');
+  test('invalid login shows error', async ({ page }) => {
+    await page.fill('#email', users.invalidUser.email);
+    await page.fill('#password', users.invalidUser.password);
+    await page.click('button[type=submit]');
+    const error = page.locator('.error');
+    await expect(error).toBeVisible();
+    await expect(error).toHaveText('Invalid email or password');
+  });
 
-  // 4. Verify login success message
-  //await expect(page.locator('#flash')).toContainText('You logged into a secure area!');
-  await expect(page.locator('#flash')).toContainText(/You logged into a secure area!/);
-
-
-  // 5. Log out
-  await page.click('a[href="/logout"]');
-
-  // 6. Verify logout message
-  await expect(page.locator('#flash')).toContainText('You logged out of the secure area!');
+  test('logout works', async ({ page }) => {
+    await page.fill('#email', users.validUser.email);
+    await page.fill('#password', users.validUser.password);
+    await page.click('button[type=submit]');
+    await page.click('#logout-btn');
+    await expect(page).toHaveURL('http://localhost:3000/login.html');
+  });
 });
