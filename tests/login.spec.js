@@ -7,7 +7,7 @@ test.describe('Login flow', () => {
   });
 
   test('valid login succeeds', async ({ page }) => {
-    await page.fill('#email', 'aa@ss.ggg');
+    await page.fill('#email', users.validUser.email);
     await page.fill('#password', users.validUser.password);
     await page.click('button[type=submit]');
     await expect(page).toHaveURL('http://localhost:3000/index.html');
