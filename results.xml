@@ -1,58 +1,58 @@
-<testsuites id="" name="" tests="20" failures="0" skipped="0" errors="0" time="7.449156">
-<testsuite name="error-alert.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.181" errors="0">
-<testcase name="Error messages &amp; alerts › shows error on invalid login" classname="error-alert.spec.js" time="1.261">
+<testsuites id="" name="" tests="20" failures="0" skipped="0" errors="0" time="8.520635">
+<testsuite name="error-alert.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.098" errors="0">
+<testcase name="Error messages &amp; alerts › shows error on invalid login" classname="error-alert.spec.js" time="0.69">
 </testcase>
-<testcase name="Error messages &amp; alerts › shows alert popup and handle it" classname="error-alert.spec.js" time="0.92">
-</testcase>
-</testsuite>
-<testsuite name="example.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="2" failures="0" skipped="0" time="10.85" errors="0">
-<testcase name="has title" classname="example.spec.js" time="5.127">
-</testcase>
-<testcase name="get started link" classname="example.spec.js" time="5.723">
+<testcase name="Error messages &amp; alerts › shows alert popup and handle it" classname="error-alert.spec.js" time="1.408">
 </testcase>
 </testsuite>
-<testsuite name="i18n.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="4" failures="0" skipped="0" time="3.538" errors="0">
-<testcase name="Internationalization (i18n) › UI changes to English" classname="i18n.spec.js" time="1.107">
+<testsuite name="example.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="2" failures="0" skipped="0" time="13.272" errors="0">
+<testcase name="has title" classname="example.spec.js" time="6.548">
 </testcase>
-<testcase name="Internationalization (i18n) › UI changes to Korean" classname="i18n.spec.js" time="0.894">
-</testcase>
-<testcase name="Internationalization (i18n) › UI changes to Japanese" classname="i18n.spec.js" time="0.72">
-</testcase>
-<testcase name="Internationalization (i18n) › UI changes to Indonesian" classname="i18n.spec.js" time="0.817">
+<testcase name="get started link" classname="example.spec.js" time="6.724">
 </testcase>
 </testsuite>
-<testsuite name="login.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.967" errors="0">
-<testcase name="Login flow › valid login succeeds" classname="login.spec.js" time="1.29">
+<testsuite name="i18n.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="4" failures="0" skipped="0" time="3.149" errors="0">
+<testcase name="Internationalization (i18n) › UI changes to English" classname="i18n.spec.js" time="0.643">
 </testcase>
-<testcase name="Login flow › invalid login shows error" classname="login.spec.js" time="0.538">
+<testcase name="Internationalization (i18n) › UI changes to Korean" classname="i18n.spec.js" time="1.436">
 </testcase>
-<testcase name="Login flow › logout works" classname="login.spec.js" time="1.139">
+<testcase name="Internationalization (i18n) › UI changes to Japanese" classname="i18n.spec.js" time="0.582">
 </testcase>
-</testsuite>
-<testsuite name="register.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.846" errors="0">
-<testcase name="Registration flow › successful registration" classname="register.spec.js" time="0.978">
-</testcase>
-<testcase name="Registration flow › missing fields shows error" classname="register.spec.js" time="0.868">
+<testcase name="Internationalization (i18n) › UI changes to Indonesian" classname="i18n.spec.js" time="0.488">
 </testcase>
 </testsuite>
-<testsuite name="reset-password.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.399" errors="0">
-<testcase name="Password Reset flow › shows success message after submitting email" classname="reset-password.spec.js" time="0.776">
+<testsuite name="login.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.472" errors="0">
+<testcase name="Login flow › valid login succeeds" classname="login.spec.js" time="1.441">
 </testcase>
-<testcase name="Password Reset flow › does not show message if email empty" classname="reset-password.spec.js" time="0.623">
+<testcase name="Login flow › invalid login shows error" classname="login.spec.js" time="0.443">
 </testcase>
-</testsuite>
-<testsuite name="responsive.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.435" errors="0">
-<testcase name="page layout on mobile" classname="responsive.spec.js" time="0.518">
-</testcase>
-<testcase name="page layout on tablet" classname="responsive.spec.js" time="0.397">
-</testcase>
-<testcase name="page layout on desktop" classname="responsive.spec.js" time="0.52">
+<testcase name="Login flow › logout works" classname="login.spec.js" time="0.588">
 </testcase>
 </testsuite>
-<testsuite name="upload.spec.js" timestamp="2025-09-29T10:05:44.033Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.843" errors="0">
-<testcase name="File upload › upload a file successfully" classname="upload.spec.js" time="0.429">
+<testsuite name="register.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.646" errors="0">
+<testcase name="Registration flow › successful registration" classname="register.spec.js" time="1.178">
 </testcase>
-<testcase name="File upload › no file shows error" classname="upload.spec.js" time="0.414">
+<testcase name="Registration flow › missing fields shows error" classname="register.spec.js" time="0.468">
+</testcase>
+</testsuite>
+<testsuite name="reset-password.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.199" errors="0">
+<testcase name="Password Reset flow › shows success message after submitting email" classname="reset-password.spec.js" time="0.566">
+</testcase>
+<testcase name="Password Reset flow › does not show message if email empty" classname="reset-password.spec.js" time="0.633">
+</testcase>
+</testsuite>
+<testsuite name="responsive.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.304" errors="0">
+<testcase name="page layout on mobile" classname="responsive.spec.js" time="0.45">
+</testcase>
+<testcase name="page layout on tablet" classname="responsive.spec.js" time="0.426">
+</testcase>
+<testcase name="page layout on desktop" classname="responsive.spec.js" time="0.428">
+</testcase>
+</testsuite>
+<testsuite name="upload.spec.js" timestamp="2025-09-29T10:19:53.787Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.977" errors="0">
+<testcase name="File upload › upload a file successfully" classname="upload.spec.js" time="0.525">
+</testcase>
+<testcase name="File upload › no file shows error" classname="upload.spec.js" time="0.452">
 </testcase>
 </testsuite>
 </testsuites>
