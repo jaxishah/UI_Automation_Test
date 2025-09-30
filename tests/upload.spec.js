@@ -1,20 +1,21 @@
 import { test, expect } from '@playwright/test';
-import path from 'path';
+import { UploadPage } from './pages/UploadPage.js';
 
-test.describe('File upload', () => {
+test.describe('File Upload flow', () => {
+  let uploadPage;
+
   test.beforeEach(async ({ page }) => {
-    await page.goto('http://localhost:3000/upload.html');
+    uploadPage = new UploadPage(page);
+    await uploadPage.goto();
   });
 
-  test('upload a file successfully', async ({ page }) => {
-    const filePath = path.resolve(__dirname, 'test-data', 'dummy.txt');
-    await page.setInputFiles('#file-input', filePath);
-    await page.click('button[type=submit]');
-    await expect(page.locator('.success')).toBeVisible();
+  test('upload a file successfully', async () => {
+    await uploadPage.uploadFile('dummy.txt');
+    await expect(uploadPage.success()).toBeVisible();
   });
 
-  test('no file shows error', async ({ page }) => {
-    await page.click('button[type=submit]');
-    await expect(page.locator('.error')).toBeVisible();
+  test('no file shows error', async () => {
+    await uploadPage.submitWithoutFile();
+    await expect(uploadPage.error()).toBeVisible();
   });
 });

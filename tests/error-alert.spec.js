@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Error messages & alerts', () => {
 
   test('shows error on invalid login', async ({ page }) => {
-    await page.goto('http://localhost:3000/login.html');
+    await page.goto('/login.html');
 
     // Fill invalid credentials
     await page.fill('#email', 'wrong@example.com');
@@ -19,7 +19,7 @@ test.describe('Error messages & alerts', () => {
   });
 
   test('shows alert popup and handle it', async ({ page }) => {
-    await page.goto('http://localhost:3000/login.html');
+    await page.goto('/login.html');
 
     // Listen for the alert dialog
     page.once('dialog', async (dialog) => {

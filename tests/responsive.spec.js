@@ -11,7 +11,7 @@ const viewports = [
 for (const v of viewports) {
 test(`page layout on ${v.name}`, async ({ page }) => {
 await page.setViewportSize({ width: v.width, height: v.height });
-await page.goto('http://localhost:3000/index.html');
+await page.goto('/index.html');
 await expect(page.locator('header')).toBeVisible();
 });
 }
