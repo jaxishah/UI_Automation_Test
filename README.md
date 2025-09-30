@@ -10,7 +10,7 @@ Playwright Test framework
 
 1. Clone the repo
 
-   git clone https://github.com/your-username/your-playwright-project.git
+   git clone https://github.com/jaxishah/UI_Automation_Test.git
    cd your-playwright-project
 
 2. Install dependencies
@@ -37,4 +37,4 @@ Playwright Test framework
 
 
 
-Note: All the points are completed mentioned in the Task. In CI/CD, 
+Note: All the tasks outlined have been completed.
