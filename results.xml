@@ -1,10 +1,10 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="1.9471679999999998">
-<testsuite name="login.spec.js" timestamp="2025-09-30T06:34:42.216Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.66" errors="0">
-<testcase name="Login flow › valid login succeeds" classname="login.spec.js" time="0.542">
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="1.9419429999999998">
+<testsuite name="login.spec.js" timestamp="2025-09-30T07:00:58.235Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.687" errors="0">
+<testcase name="Login flow › valid login succeeds" classname="login.spec.js" time="0.544">
 </testcase>
-<testcase name="Login flow › invalid login shows error" classname="login.spec.js" time="0.54">
+<testcase name="Login flow › invalid login shows error" classname="login.spec.js" time="0.51">
 </testcase>
-<testcase name="Login flow › logout works" classname="login.spec.js" time="0.578">
+<testcase name="Login flow › logout works" classname="login.spec.js" time="0.633">
 </testcase>
 </testsuite>
 </testsuites>

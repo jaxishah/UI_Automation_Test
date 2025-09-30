@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "E:\\Jaxi\\UI_Automation_Test_2\\playwright.config.js",
-    "rootDir": "E:/Jaxi/UI_Automation_Test_2/tests",
+    "configFile": "E:\\Jaxi\\UI_Automation_Test\\playwright.config.js",
+    "rootDir": "E:/Jaxi/UI_Automation_Test/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -45,7 +45,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "E:/Jaxi/UI_Automation_Test_2/test-results",
+        "outputDir": "E:/Jaxi/UI_Automation_Test/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -53,7 +53,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "E:/Jaxi/UI_Automation_Test_2/tests",
+        "testDir": "E:/Jaxi/UI_Automation_Test/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -102,12 +102,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 542,
+                      "duration": 544,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-30T06:34:43.140Z",
+                      "startTime": "2025-09-30T07:00:59.232Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -136,12 +136,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 540,
+                      "duration": 510,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-30T06:34:43.111Z",
+                      "startTime": "2025-09-30T07:00:59.255Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -170,12 +170,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 578,
+                      "duration": 633,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-30T06:34:43.205Z",
+                      "startTime": "2025-09-30T07:00:59.185Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -195,8 +195,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-30T06:34:42.178Z",
-    "duration": 1947.168,
+    "startTime": "2025-09-30T07:00:58.178Z",
+    "duration": 1941.9429999999998,
     "expected": 3,
     "skipped": 0,
     "unexpected": 0,
