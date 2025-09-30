@@ -23,6 +23,12 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Start server
+        run: node server.js &
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:3000
+
       - name: Run Playwright tests
         run: npx playwright test
 
