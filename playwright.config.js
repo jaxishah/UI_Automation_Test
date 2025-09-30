@@ -87,9 +87,10 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'npx http-server . -p 3000',
-    port: 3000,
-    reuseExistingServer: !process.env.CI, // reuse locally
+    command: 'node server.js',      // command to start server (optional if already running)
+    url: 'http://localhost:3000',   // server URL
+    reuseExistingServer: true,      // ✅ use this to avoid conflicts
+    timeout: 30000,
   },
 });
 

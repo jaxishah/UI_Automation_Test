@@ -1,10 +1,58 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="1.9419429999999998">
-<testsuite name="login.spec.js" timestamp="2025-09-30T07:00:58.235Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.687" errors="0">
-<testcase name="Login flow › valid login succeeds" classname="login.spec.js" time="0.544">
+<testsuites id="" name="" tests="20" failures="0" skipped="0" errors="0" time="5.072358">
+<testsuite name="error-alert.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.083" errors="0">
+<testcase name="Error messages &amp; alerts › shows error on invalid login" classname="error-alert.spec.js" time="1.033">
 </testcase>
-<testcase name="Login flow › invalid login shows error" classname="login.spec.js" time="0.51">
+<testcase name="Error messages &amp; alerts › shows alert popup and handle it" classname="error-alert.spec.js" time="1.05">
 </testcase>
-<testcase name="Login flow › logout works" classname="login.spec.js" time="0.633">
+</testsuite>
+<testsuite name="example.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.816" errors="0">
+<testcase name="has title" classname="example.spec.js" time="2.872">
+</testcase>
+<testcase name="get started link" classname="example.spec.js" time="2.944">
+</testcase>
+</testsuite>
+<testsuite name="i18n.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="4" failures="0" skipped="0" time="4.183" errors="0">
+<testcase name="Internationalization (i18n) › UI changes to English" classname="i18n.spec.js" time="1.08">
+</testcase>
+<testcase name="Internationalization (i18n) › UI changes to Korean" classname="i18n.spec.js" time="1.149">
+</testcase>
+<testcase name="Internationalization (i18n) › UI changes to Japanese" classname="i18n.spec.js" time="1.021">
+</testcase>
+<testcase name="Internationalization (i18n) › UI changes to Indonesian" classname="i18n.spec.js" time="0.933">
+</testcase>
+</testsuite>
+<testsuite name="login.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.9" errors="0">
+<testcase name="Login flow › valid login succeeds" classname="login.spec.js" time="1.212">
+</testcase>
+<testcase name="Login flow › invalid login shows error" classname="login.spec.js" time="0.817">
+</testcase>
+<testcase name="Login flow › logout works" classname="login.spec.js" time="0.871">
+</testcase>
+</testsuite>
+<testsuite name="register.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.395" errors="0">
+<testcase name="Registration flow › successful registration" classname="register.spec.js" time="0.835">
+</testcase>
+<testcase name="Registration flow › missing fields shows error" classname="register.spec.js" time="0.56">
+</testcase>
+</testsuite>
+<testsuite name="reset-password.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.082" errors="0">
+<testcase name="Password Reset flow › shows success message after submitting email" classname="reset-password.spec.js" time="0.654">
+</testcase>
+<testcase name="Password Reset flow › does not show message if email empty" classname="reset-password.spec.js" time="0.428">
+</testcase>
+</testsuite>
+<testsuite name="responsive.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.706" errors="0">
+<testcase name="page layout on mobile" classname="responsive.spec.js" time="0.397">
+</testcase>
+<testcase name="page layout on tablet" classname="responsive.spec.js" time="0.68">
+</testcase>
+<testcase name="page layout on desktop" classname="responsive.spec.js" time="0.629">
+</testcase>
+</testsuite>
+<testsuite name="upload.spec.js" timestamp="2025-09-30T07:18:39.258Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.06" errors="0">
+<testcase name="File Upload flow › upload a file successfully" classname="upload.spec.js" time="0.621">
+</testcase>
+<testcase name="File Upload flow › no file shows error" classname="upload.spec.js" time="0.439">
 </testcase>
 </testsuite>
 </testsuites>
